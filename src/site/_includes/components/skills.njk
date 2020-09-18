@@ -1,0 +1,16 @@
+<div class="mx-auto flex flex-col items-center text-sm p-4
+  sm:w-64">
+  <p class="font-bold">Technologies I use:</p>
+  <div class="flex flex-col items-center">
+    {% for tech in techs %}
+      {% if tech.label != 'All' %}
+        <p>for {{ tech.label }}</p>
+        <div class="space-x-2">
+          {% for icons in tech.icons %}
+            <i class="{{ icons }} text-xl"></i>
+          {% endfor %}
+        </div>
+      {% endif %}
+  {% endfor %}
+  </div>
+</div>

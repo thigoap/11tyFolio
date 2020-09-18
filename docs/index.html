@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Your name here">
+  <meta name="description" content="A portfolio template built with 11ty Static Site Generator and TailwindCSS.">
+  <link rel="stylesheet" href="/11tyFolio/static/css/styles.css">
+  <link rel="icon" href=>
+  <title>11tyfolio</title>
+  <script src="https://kit.fontawesome.com/40fd1bd135.js" crossorigin="anonymous"></script>
+</head>
+<body class="h-screen">
+
+  <div class="max-w-4xl mx-auto">
+    <header class="font-header flex flex-col justify-center
+  sm:flex-row sm:mt-4 sm:mx-auto
+">
+  <div>
+    <div class="flex flex-col items-center bg-herocard p-4
+  sm:w-64 sm:rounded-lg">
+  <div class="mb-2">
+    
+    <img
+      class="mx-auto w-24 h-auto rounded-full mb-2"
+      src=/11tyFolio/static/assets/avatar.png alt="avatar"
+    >
+    
+    
+      <p class="text-xl font-semibold text-center">Hi, I am Batman.</p>
+    
+    
+      <p class="text-center">I am a web developer. In this portfolio you can see some of my projects.</p>
+    
+  </div>
+  
+  <div class="flex space-x-2">
+    
+      <a href="https://www.github.com/"><i class="fab fa-github-square text-2xl"></i></a>
+    
+      <a href="https://www.linkedin.com/"><i class="fab fa-linkedin text-2xl"></i></a>
+    
+      <a href="https://www.twitter.com/"><i class="fab fa-twitter-square text-2xl"></i></a>
+    
+      <a href="https://www.codepen.io/"><i class="fab fa-codepen text-2xl"></i></a>
+    
+  </div>
+
+</div>
+  </div>
+  <div>
+    <div class="mx-auto flex flex-col items-center text-sm p-4
+  sm:w-64">
+  <p class="font-bold">Technologies I use:</p>
+  <div class="flex flex-col items-center">
+    
+      
+  
+      
+        <p>for Web Development</p>
+        <div class="space-x-2">
+          
+            <i class="fab fa-html5 text-xl"></i>
+          
+            <i class="fab fa-css3-alt text-xl"></i>
+          
+            <i class="fab fa-js-square text-xl"></i>
+          
+            <i class="fab fa-node-js text-xl"></i>
+          
+            <i class="fab fa-vuejs text-xl"></i>
+          
+        </div>
+      
+  
+      
+        <p>for Mobile Development</p>
+        <div class="space-x-2">
+          
+            <i class="fab fa-android text-xl"></i>
+          
+            <i class="fab fa-java text-xl"></i>
+          
+        </div>
+      
+  
+      
+        <p>for Game Development</p>
+        <div class="space-x-2">
+          
+            <i class="fab fa-unity text-xl"></i>
+          
+        </div>
+      
+  
+  </div>
+</div>
+  </div>
+</header>
+    <div class="container mx-auto py-2
+      sm:px-4
+      md:px-8">
+      <main class="flex flex-col flex-1 text-gray-900 p-2">
+        <div class="bg-yellow-100 border-t-4 border-yellow-500 rounded-b text-yellow-800 px-4 py-3 mb-3 shadow-md" role="alert">
+  <div class="flex">
+    <div class="py-1"><svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+    <div>
+      <p class="font-bold">Get Started</p>
+      <p class="text-sm">In order to start using this portfolio template, please follow the instructions in the <a class="underline text-yellow-800" href="/get-started"> get started section</a>.</p>
+      <p class="text-sm">You can find the source code <a class="underline text-yellow-800" rel="noopener noreferrer" target="_blank" aria-label="link to source code" href="https://github.com/thigoap/11tyfolio">here</a>.</p>
+    </div>
+  </div>
+</div>
+        <p class="text-2xl font-medium text-center">Projects</p>
+        <div class="mb-3" id="projectsList">
+  
+    <ul class="flex border-b flex-col text-center sm:flex-row">
+      
+        <li class="mr-1" id="itemtoall">
+          <p class="bg-white text-gray-500 inline-block sm:py-2 px-3 cursor-pointer" id="toall">
+            All
+          </p>  
+        </li>
+      
+        <li class="mr-1" id="itemtowebdev">
+          <p class="bg-white text-gray-500 inline-block sm:py-2 px-3 cursor-pointer" id="towebdev">
+            Web Development
+          </p>  
+        </li>
+      
+        <li class="mr-1" id="itemtomobiledev">
+          <p class="bg-white text-gray-500 inline-block sm:py-2 px-3 cursor-pointer" id="tomobiledev">
+            Mobile Development
+          </p>  
+        </li>
+      
+        <li class="mr-1" id="itemtogamedev">
+          <p class="bg-white text-gray-500 inline-block sm:py-2 px-3 cursor-pointer" id="togamedev">
+            Game Development
+          </p>  
+        </li>
+      
+    </ul>
+  
+</div>
+
+<script>
+  itemtoall.classList.add('-mb-px')
+  toall.classList.add('text-black', 'sm:border-l', 'sm:border-t', 'sm:border-r', 'sm:rounded-t')
+  toall.classList.remove('text-gray-500')
+</script>
+        
+<div class="grid grid-cols-1 text-center gap-4 mx-auto w-11/12
+  sm:grid-cols-00
+">
+  
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto webdev">
+    
+      <a href=https://thigoap.github.io/11tyFolio>
+        <img class="w-full h-48 object-cover" src="/11tyFolio/static/assets/projects/portfolio.png" alt="Portfolio Template">
+      </a>
+    
+    <div class="p-4">
+      <div class="text-xl font-bold mb-1">Portfolio Template</div>
+      <div class="text-gray-700">A little inception... this portfolio.</div>
+      <div class="w-4/5 mx-auto flex justify-around py-2">
+        
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href=https://www.github.com/thigoap/11tyFolio>
+            CODE
+          </a>
+        
+        
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href=https://thigoap.github.io/11tyFolio>
+            DEMO
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto webdev">
+    
+      <img class="w-full h-48 object-cover" src="/11tyFolio/static/assets/projects/webdev.jpg" alt="Web dev Project 02">
+    
+    <div class="p-4">
+      <div class="text-xl font-bold mb-1">Web dev Project 02</div>
+      <div class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="w-4/5 mx-auto flex justify-around py-2">
+        
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href=https://www.github.com>
+            CODE
+          </a>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto mobiledev">
+    
+      <a href=#>
+        <img class="w-full h-48 object-cover" src="/11tyFolio/static/assets/projects/mobiledev.jpeg" alt="Mobile dev Project 01">
+      </a>
+    
+    <div class="p-4">
+      <div class="text-xl font-bold mb-1">Mobile dev Project 01</div>
+      <div class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="w-4/5 mx-auto flex justify-around py-2">
+        
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href=https://www.github.com>
+            CODE
+          </a>
+        
+        
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href=#>
+            DEMO
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto gamedev">
+    
+      <a href=#>
+        <img class="w-full h-48 object-cover" src="/11tyFolio/static/assets/projects/gamedev.jpg" alt="Game dev Project 01">
+      </a>
+    
+    <div class="p-4">
+      <div class="text-xl font-bold mb-1">Game dev Project 01</div>
+      <div class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <div class="w-4/5 mx-auto flex justify-around py-2">
+        
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href=https://www.github.com>
+            CODE
+          </a>
+        
+        
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href=#>
+            DEMO
+        </a>
+        
+      </div>
+    </div>
+  </div>
+
+</div>
+      </main>
+      <div class="w-full max-w-md md:max-w-2xl mx-auto my-8">
+  <div class="flex flex-col items-center">
+    <p class="text-2xl font-medium">Contact me</p>
+    <p>Using this form</p> 
+  </div>
+  <form
+    name="contact"
+    method="POST"
+    action =""
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    class="bg-white shadow-md rounded p-4 mb-4 grid grid-cols-1 md:grid-cols-2"
+  >
+    <input
+      class="hidden"
+      name="bot-field"
+    >  
+    <div class="inputs md:mr-4">
+      <div class="mb-4">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="name"
+          type="text"
+          placeholder="Name"
+          required="required">
+      </div>
+      <div class="mb-4">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email"
+          type="email" 
+          placeholder="Email"
+          required="required">
+      </div>
+      <div class="mb-4">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="subject"
+        type="text"
+        placeholder="Subject"
+        required="required">
+      </div>
+    </div>
+    <div class="textarea mb-4">
+      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 md:h-full"
+        placeholder="Message"
+        required="required"></textarea>
+    </div>
+    <div class="flex items-center justify-center md:col-span-2">
+      <button
+        class="text-buttontext bg-buttonbg hover:bg-buttonhover font-bold py-1 px-8 rounded focus:outline-none focus:shadow-outline duration-200"
+        type="submit"
+      >Send</button>
+    </div>
+  </form>
+
+  <p class="mt-8 text-center">Or by email: 
+    <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i> youremail@example.com</a>
+  </p>
+  
+</div>
+      </div>
+  </div>
+  <footer class="mt-auto text-center text-xs font-header p-4 bg-footerbg">
+  <p>Developed by <a rel="noopener noreferrer" target="_blank" aria-label="link to github" href="https://www.github.com/thigoap">thigoap</a></p>
+  <p>Built with <a rel="noopener noreferrer" target="_blank" aria-label="link to 11ty" href="https://www.11ty.dev">11ty</a>
+  and <a rel="noopener noreferrer" target="_blank" aria-label="link to Tailwind" href="https://www.tailwindcss.com">Tailwind CSS</a></p>
+</footer>
+
+  <script src="/11tyFolio/static/js/projects.js"></script>
+  <script src="/11tyFolio/static/js/techs.js"></script>
+
+</body>
+</html>

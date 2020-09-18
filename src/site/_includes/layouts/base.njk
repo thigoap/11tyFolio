@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="{{ metadata.hero.name }}">
+  <meta name="description" content="{{ metadata.description }}">
+  <link rel="stylesheet" href="{{ '/static/css/styles.css' | url }}">
+  <link rel="icon" href={{ metadata.logo }}>
+  <title>{{ metadata.title }}</title>
+  <script src="https://kit.fontawesome.com/40fd1bd135.js" crossorigin="anonymous"></script>
+</head>
+<body class="h-screen">
+
+  <div class="max-w-4xl mx-auto">
+    {% include '../components/header.njk' %}
+    <div class="container mx-auto py-2
+      sm:px-4
+      md:px-8">
+      <main class="flex flex-col flex-1 text-gray-900 p-2">
+        {% include 'components/info.njk' %}
+        <p class="text-2xl font-medium text-center">Projects</p>
+        {% include 'components/techsNav.njk' %}
+        {{ content | safe }}
+      </main>
+      {% include 'components/contact.njk' %}
+      </div>
+  </div>
+  {% include 'components/footer.njk' %}
+
+  <script src="{{ '/static/js/projects.js' | url }}"></script>
+  <script src="{{ '/static/js/techs.js' | url }}"></script>
+
+</body>
+</html>

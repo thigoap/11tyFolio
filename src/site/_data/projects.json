@@ -1,0 +1,33 @@
+[
+  { 
+    "tech": "webdev",
+    "name": "Portfolio Template",
+    "image": "{{ '/static/assets/projects/portfolio.png' | url }}",
+    "description": "A little inception... this portfolio.",
+    "code": "https://www.github.com/thigoap/11tyFolio",
+    "demo": "https://thigoap.github.io/11tyFolio"
+  },
+  {
+    "tech": "webdev",  
+    "name": "Web dev Project 02",
+    "image": "{{ '/static/assets/projects/webdev.jpg' | url }}",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "code": "https://www.github.com"
+  },
+  {
+    "tech": "mobiledev",
+    "name": "Mobile dev Project 01",
+    "image": "{{ '/static/assets/projects/mobiledev.jpeg' | url }}",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "code": "https://www.github.com",
+    "demo": "#"
+  },
+  {
+    "tech": "gamedev",
+    "name": "Game dev Project 01",
+    "image": "{{ '/static/assets/projects/gamedev.jpg' | url }}",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "code": "https://www.github.com",
+    "demo": "#"
+  }
+]

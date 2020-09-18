@@ -1,0 +1,29 @@
+{% for project in projects %}
+  <div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto {{ project.tech }}">
+    {% if project.demo %}
+      <a href={{ project.demo }}>
+        <img class="w-full h-48 object-cover" src="{{ project.image }}" alt="{{ project.name }}">
+      </a>
+    {% else %}
+      <img class="w-full h-48 object-cover" src="{{ project.image }}" alt="{{ project.name }}">
+    {% endif %}
+    <div class="p-4">
+      <div class="text-xl font-bold mb-1">{{ project.name }}</div>
+      <div class="text-gray-700">{{ project.description }}</div>
+      <div class="w-4/5 mx-auto flex justify-around py-2">
+        {% if project.code %}
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href={{ project.code }}>
+            CODE
+          </a>
+        {% endif %}
+        {% if project.demo %}
+          <a class="text-buttontext bg-buttonbg hover:bg-buttonhover font-medium p-1 rounded focus:outline-none focus:shadow-outline duration-200"
+          href={{ project.demo }}>
+            DEMO
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}

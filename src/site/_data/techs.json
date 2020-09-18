@@ -1,0 +1,35 @@
+[
+  {
+    "label": "All",
+    "link": "toall"   
+  },
+  {
+    "label": "Web Development",
+    "link": "towebdev",
+    "icons":
+    [
+      "fab fa-html5",
+      "fab fa-css3-alt",
+      "fab fa-js-square",
+      "fab fa-node-js",
+      "fab fa-vuejs"
+    ]
+  },
+  {
+    "label": "Mobile Development",
+    "link": "tomobiledev",
+    "icons":
+    [
+      "fab fa-android",
+      "fab fa-java"
+    ]
+  },
+  {
+    "label": "Game Development",
+    "link": "togamedev",
+    "icons":
+    [
+      "fab fa-unity"
+    ]
+  }
+]

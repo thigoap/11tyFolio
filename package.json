@@ -1,0 +1,31 @@
+{
+  "name": "11tyfolio",
+  "version": "0.1.0",
+  "description": "A portfolio template built with 11ty Static Site Generator and TailwindCSS.",
+  "author": "Thiago Abrahão Pereira",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thigoap/11tyFolio"
+  },
+  "scripts": {
+    "build": "npm-run-all build:css build:11ty",
+    "build:css": "postcss src/site/_includes/css/main.css -o src/site/static/css/styles.css",
+    "build:11ty": "eleventy",
+    "build:gh": "npm-run-all --parallel config build:css build:11tygh",
+    "build:11tygh": "eleventy --pathprefix=11tyFolio --output=docs",
+    "dev": "npm-run-all --parallel config dev:css dev:11ty",
+    "dev:css": "postcss src/site/_includes/css/main.css -o src/site/static/css/styles.css --watch",
+    "dev:11ty": "eleventy --serve",
+    "config": "node src/utils/configProjects.js & node src/utils/configTechs.js"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "tailwindcss": "^1.7.6"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.2",
+    "postcss-import": "^12.0.1"
+  }
+}

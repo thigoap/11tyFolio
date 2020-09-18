@@ -1,0 +1,24 @@
+<div class="flex flex-col items-center bg-herocard p-4
+  sm:w-64 sm:rounded-lg">
+  <div class="mb-2">
+    {% if metadata.hero.avatar %}
+    <img
+      class="mx-auto w-24 h-auto rounded-full mb-2"
+      src={{ metadata.hero.avatar }} alt="avatar"
+    >
+    {% endif %}
+    {% if metadata.hero.greeting %}
+      <p class="text-xl font-semibold text-center">{{ metadata.hero.greeting }}</p>
+    {% endif %}
+    {% if metadata.hero.description %}
+      <p class="text-center">{{ metadata.hero.description }}</p>
+    {% endif %}
+  </div>
+  
+  <div class="flex space-x-2">
+    {% for network in social %}
+      <a href="{{ network.url }}"><i class="{{ network.icon }} text-2xl"></i></a>
+    {% endfor %}
+  </div>
+
+</div>

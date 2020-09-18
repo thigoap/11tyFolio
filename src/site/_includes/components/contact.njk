@@ -1,0 +1,58 @@
+<div class="w-full max-w-md md:max-w-2xl mx-auto my-8">
+  <div class="flex flex-col items-center">
+    <p class="text-2xl font-medium">Contact me</p>
+    <p>Using this form</p> 
+  </div>
+  <form
+    name="contact"
+    method="POST"
+    action =""
+    data-netlify="true"
+    netlify-honeypot="bot-field"
+    class="bg-white shadow-md rounded p-4 mb-4 grid grid-cols-1 md:grid-cols-2"
+  >
+    <input
+      class="hidden"
+      name="bot-field"
+    >  
+    <div class="inputs md:mr-4">
+      <div class="mb-4">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="name"
+          type="text"
+          placeholder="Name"
+          required="required">
+      </div>
+      <div class="mb-4">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          id="email"
+          type="email" 
+          placeholder="Email"
+          required="required">
+      </div>
+      <div class="mb-4">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        id="subject"
+        type="text"
+        placeholder="Subject"
+        required="required">
+      </div>
+    </div>
+    <div class="textarea mb-4">
+      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 md:h-full"
+        placeholder="Message"
+        required="required"></textarea>
+    </div>
+    <div class="flex items-center justify-center md:col-span-2">
+      <button
+        class="text-buttontext bg-buttonbg hover:bg-buttonhover font-bold py-1 px-8 rounded focus:outline-none focus:shadow-outline duration-200"
+        type="submit"
+      >Send</button>
+    </div>
+  </form>
+
+  <p class="mt-8 text-center">Or by email: 
+    <a href="mailto:{{ metadata.hero.email }}"><i class="fas fa-envelope"></i> {{ metadata.hero.email }}</a>
+  </p>
+  
+</div>

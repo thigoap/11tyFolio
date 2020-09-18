@@ -1,0 +1,22 @@
+[
+  {
+    "name": "github",
+    "icon": "fab fa-github-square",
+    "url": "https://www.github.com/"
+  },
+  {
+    "name": "linkedin",
+    "icon": "fab fa-linkedin",
+    "url": "https://www.linkedin.com/"
+  },
+  {
+    "name": "twitter",
+    "icon": "fab fa-twitter-square",
+    "url": "https://www.twitter.com/"
+  },
+  {
+    "name": "codepen",
+    "icon": "fab fa-codepen",
+    "url": "https://www.codepen.io/"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "title": "11tyfolio",
+  "description": "A portfolio template built with 11ty Static Site Generator and TailwindCSS.",
+  "hero": {
+    "name": "Your name here",
+    "avatar": "{{ '/static/assets/avatar.png' | url }}",
+    "greeting": "Hi, I am Batman.",
+    "description": "I am a web developer. In this portfolio you can see some of my projects.",
+    "email": "youremail@example.com"
+  }
+}

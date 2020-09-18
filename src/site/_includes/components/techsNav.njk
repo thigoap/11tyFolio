@@ -1,0 +1,19 @@
+<div class="mb-3" id="projectsList">
+  {% if techs %}
+    <ul class="flex border-b flex-col text-center sm:flex-row">
+      {% for tech in techs %}
+        <li class="mr-1" id="item{{ tech.link }}">
+          <p class="bg-white text-gray-500 inline-block sm:py-2 px-3 cursor-pointer" id="{{ tech.link }}">
+            {{ tech.label }}
+          </p>  
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
+
+<script>
+  itemtoall.classList.add('-mb-px')
+  toall.classList.add('text-black', 'sm:border-l', 'sm:border-t', 'sm:border-r', 'sm:rounded-t')
+  toall.classList.remove('text-gray-500')
+</script>

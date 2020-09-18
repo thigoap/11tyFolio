@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/11tyFolio/static/css/styles.css">
+  <title>Get Started</title>
+</head>
+<body>
+
+  <div class="font-console text-gray-700">
+    
+<nav class="p-4 bg-teal-700 text-white" id="header">
+  <div class="flex justify-between items-center max-w-4xl mx-auto">
+    <p class="text-2xl">Get Started Section</p>
+    <p><a href="/11tyFolio/">Back to index</a></p>
+  </div>
+</nav>
+
+<div class="flex flex-col max-w-4xl mx-auto px-4">
+  <p class="text-2xl font-bold underline mb-2">Jump to</p>
+  <div class="mb-4">
+    <p><a href="#global-info">Global Info</a></p>
+    <p><a href="#hero-section">Hero Section</a></p>
+    <p><a href="#social-section">Social Section</a></p>
+    <p><a href="#skills-section">Skills Section</a></p>
+    <p><a href="#instruction-msg">Instruction Message</a></p>
+    <p><a href="#tech-nav">Techs Navigation Bar</a></p>
+    <p><a href="#projects-section">Projects Section</a></p>
+    <p><a href="#contact-section">Contact Section</a></p>
+    <p><a href="#styles-colors">Styles / Colors</a></p>
+    <p><a href="#styles-fonts">Styles / Fonts</a></p>
+    <p><a href="#deployment">Deployment</a></p>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="global-info">Global Info</p>
+  <div class="mb-4">
+    <p>The basic info to fill this portfolio is stored in <span class="border text-gray-500 bg-gray-200 p-1">src/site/_data/<strong>metadata.json</strong></span></p>
+    <p>It includes:</p>
+    <ul class="list-disc list-inside">
+      <li>title: the title of your portfolio, used in the &lt;meta&gt; tag;</li>
+      <li>description: the description of your portfolio, used in the &lt;meta&gt; tag;</li>
+      <li>hero: your personal info, some of the items will be explained in details in the Hero and Contact Section;</li>
+      <li>hero/name: your name, used in the &lt;meta&gt; tag, as the author;</li>
+    </ul>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="hero-section">Hero Section</p>
+  <div class="mb-4">
+    <p>Info about you, the hero / heroin! All items are optional. As mentioned above, the items are in <span class="border text-gray-500 bg-gray-200 p-1">src/site/_data/<strong>metadata.json</strong></span>.</p>
+    <p>It includes:</p>
+    <ul class="list-disc list-inside">
+      <li>avatar: your profile picture. If used, you need to replace the file <span class="border text-gray-500 bg-gray-200 p-1">avatar.png</span> in the folder <span class="border text-gray-500 bg-gray-200 p-1">src/site/assets/</span>;</li>
+      <li>greeting: a greeting message;</li>
+      <li>description: a short dev description;</li>
+    </ul>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="social-section">Social Section</p>
+  <div class="mb-4">
+    <p>Your social networks are stored as objects in <span class="border text-gray-500 bg-gray-200 p-1">src/site/_data/<strong>social.json</strong></span>.</p>
+    <p>It includes:</p>
+    <ul class="list-disc list-inside">
+      <li>name: the social network;</li>
+      <li>icon: icons by Font Awesome;</li>
+      <li>url: the url to be used in the anchor tag;</li>
+    </ul>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="skills-section">Skills Section</p>
+  <div class="mb-4">
+    <p>Your skills. It can be edited in <span class="border text-gray-500 bg-gray-200 p-1">src/site/_data/<strong>techs.json</strong></span>.</p>
+    <p>It includes:</p>
+    <ul class="list-disc list-inside">
+      <li>label: the tech itself. It is also used to display the tech in the techs navigation bar;</li>
+      <li>link: used as a class to display and style the Techs Navigation Bar;</li>
+      <li>icons: array of icons by Font Awesome. You can add as many icons as you want;</li>
+    </ul>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="instruction-msg">Instruction Message</p>
+  <div class="mb-4">
+    <p>Delete the code and the file listed below to get rid of the Instruction Message:</p>
+    <ul class="list-disc list-inside">
+      <li>code: <span class="border text-gray-500 bg-gray-200 p-1">{% include 'components/info.njk' %}</span> in <span class="border text-gray-500 bg-gray-200 p-1">src/site/_includes/layouts/<strong>base.njk</strong></span></li>
+      <li>file: <span class="border text-gray-500 bg-gray-200 p-1">src/site/_includes/components/<strong>info.njk</strong></span></li>
+    </ul>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="tech-nav">Techs Navigation Bar</p>
+  <div class="mb-4">
+    <p>A navigation bar with your skills.</p>
+    <p>'All' renders all your projects in the index page. The other tabs are generated according to the file <span class="border text-gray-500 bg-gray-200 p-1">techs.json</span>.</p>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="projects-section">Projects Section</p>
+  <div class="mb-4">
+    <p>Info about your projects. It can be edited in <span class="border text-gray-500 bg-gray-200 p-1">src/site/_data/<strong>projects.json</strong></span>.</p>
+    <p>Edited items are:</p>
+    <ul class="list-disc list-inside">
+      <li>tech: must have the same name (without the prefix 'to') as one of the links in the file <span class="border text-gray-500 bg-gray-200 p-1">techs.json</span>;</li>
+        <ul>
+          <li class="ml-6">E.g.: techs.json "link": towebdev / projects.json "tech": webdev </li>
+        </ul>
+      <li>name: the name of the project;</li>
+      <li>image: an image of the project. If you have a demo page for the project, the image will have an anchor tag to the live demo;</li>
+      <li>description: a description of the project;</li>
+      <li>code: optional url to a code repository;</li>
+      <li>demo: optional url to a live demo;</li>
+    </ul>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="contact-section">Contact Section</p>
+  <div class="mb-4">
+    <p>The form is configured to be used with Netlify Forms.</p>
+    <p>If you are going to deploy it in GitHub Pages I recommend you to use some static form provider, as <a href="https://www.staticforms.xyz/" class="underline">staticforms.xyz</a>.</p>
+    <p>Here is a list of other form providers: <a href="https://css-tricks.com/a-comparison-of-static-form-providers/" class="underline">https://css-tricks.com/a-comparison-of-static-form-providers/</a>.</p>
+    <p>There is also a button to open an email app with the email provided in the <span class="border text-gray-500 bg-gray-200 p-1">metadata.json</span> file.</p>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="styles-colors">Styles / Colors</p>
+  <div class="mb-4">
+    <p> You can customize any component you want directly in the components files.</p>
+    <p>Or, to make it easier, all principal colors are brought together in <span class="border text-gray-500 bg-gray-200 p-1">tailwind.config.js</span> file.</p>
+    <ul class="list-disc list-inside">
+      <li>herocard: the background color of the hero card; </li>
+      <li>buttonbg: the background color of the buttons;</li>
+      <li>buttonhover: the background color of the buttons when hovered;</li>
+      <li>buttontext: the text color of the buttons;</li>
+      <li>footerbg: the background color of the footer;</li>
+    </ul>
+  </div>
+
+  <p class="text-2xl font-bold underline mb-2" id="styles-fonts">Styles / Fonts</p>
+  <div class="mb-4">
+    <p>Fonts can be edited directly in the same way as the colors.</p>
+    </p>Also, <span class="border text-gray-500 bg-gray-200 p-1">tailwind.config.js</span> file has two customizable fonts:</p>
+    <ul class="list-disc list-inside">
+      <li>sans: the default font of all the content;</li>
+      <li>header: the font used in the header and the footer;</li>
+    </ul>    
+    <p>You need to import any new font in the file <span class="border text-gray-500 bg-gray-200 p-1">src/site/_includes/css/<strog>main.css</strog></span>.</p>
+  </div>
+  
+  <p class="text-2xl font-bold underline mb-2" id="deployment">Deployment</p>
+  <div class="mb-4">
+    <p>The deployment instructions are detailed in the <a href="https://www.github.com/thigoap/11tyFolio/" class="underline">Github Repository</a>.</p>
+  </div>
+
+  <div class="bg-teal-100 border-t border-b border-teal-500 text-teal-700 px-4 py-3 my-4">
+    <p>If you identify some issue, have a queston about the setup/customization proccess or would like to help this project to grow, you can contact me by:</p>
+    <ul class="list-disc list-inside">
+      <li>Email: <a href="mailto:appthigo@gmail.com" class="underline">appthigo@gmail.com</a></li>
+      <li>Twitter: <a href="https://www.twitter.com/appthigo" class="underline">@appthigo</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/thigoap" class="underline">@thigoap</a></li>
+    </ul> 
+    <p>Or use <a href="https://www.github.com/thigoap/11tyFolio/issues" class="underline">Github Issues</a>.</p>
+  </div>
+
+</div>
+
+<footer class="p-4 bg-teal-700 text-white">
+  <div class="flex justify-between items-center max-w-4xl mx-auto">
+    <p class="text-2xl">&copy; 2020 11tyFolio</p>
+    <p><a href="#header">Back to top</a></p>
+  </div>
+</footer>
+  </div>
+  
+</body>
+</html>
