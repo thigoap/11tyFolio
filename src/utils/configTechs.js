@@ -23,18 +23,18 @@ for (tech in techsArray) {
   for (currTech in techsArray) {
     if (currTech === tech) {
       techsScript = `
-  item${techsArray[currTech]}.classList.add('sm:-mb-px')
-  ${techsArray[currTech]}.classList.add('text-black', 'sm:border-l', 'sm:border-t', 'sm:border-r', 'sm:rounded-t')
-  ${techsArray[currTech]}.classList.remove('text-gray-500')`
+  item${techsArray[currTech]}.classList.add('-mb-px')
+  ${techsArray[currTech]}.classList.add('font-medium', 'sm:border-l', 'sm:border-t', 'sm:border-r', 'sm:rounded-t')
+  ${techsArray[currTech]}.classList.remove('font-base')`
       fs.appendFileSync('./src/site/static/js/techs.js', techsScript, (err) => {   
         if (err) throw err; 
       })
     }
     else {
       techsScript = `
-  item${techsArray[currTech]}.classList.remove('sm:-mb-px')
-  ${techsArray[currTech]}.classList.remove('text-black', 'sm:border-l', 'sm:border-t', 'sm:border-r', 'sm:rounded-t')
-  ${techsArray[currTech]}.classList.add('text-gray-500')`
+  item${techsArray[currTech]}.classList.remove('-mb-px')
+  ${techsArray[currTech]}.classList.remove('font-medium', 'sm:border-l', 'sm:border-t', 'sm:border-r', 'sm:rounded-t')
+  ${techsArray[currTech]}.classList.add('font-base')`
       fs.appendFileSync('./src/site/static/js/techs.js', techsScript, (err) => {   
         if (err) throw err; 
       })

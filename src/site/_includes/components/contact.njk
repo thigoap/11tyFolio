@@ -17,37 +17,44 @@
     >  
     <div class="inputs md:mr-4">
       <div class="mb-4">
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight"
           id="name"
           type="text"
           placeholder="Name"
-          required="required">
+          required="required"
+          aria-label="name"
+        >
       </div>
       <div class="mb-4">
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight"
           id="email"
           type="email" 
           placeholder="Email"
-          required="required">
-      </div>
+          required="required"
+          aria-label="email"
+        >
+        </div>
       <div class="mb-4">
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-        id="subject"
-        type="text"
-        placeholder="Subject"
-        required="required">
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight"
+          id="subject"
+          type="text"
+          placeholder="Subject"
+          required="required"
+          aria-label="subject"
+        >
       </div>
     </div>
     <div class="textarea mb-4">
-      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 md:h-full"
+      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight h-32 md:h-full"
         placeholder="Message"
-        required="required"></textarea>
+        required="required"
+        aria-label="message"></textarea>
     </div>
     <div class="flex items-center justify-center md:col-span-2">
       <button
         class="text-buttontext bg-buttonbg hover:bg-buttonhover font-bold py-1 px-8 rounded focus:outline-none focus:shadow-outline duration-200"
-        type="submit"
-      >Send</button>
+        type="submit">
+      Send</button>
     </div>
   </form>
 

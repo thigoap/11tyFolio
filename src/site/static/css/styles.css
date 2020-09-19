@@ -757,6 +757,10 @@ video {
   flex-direction: column;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
 }
@@ -831,6 +835,10 @@ video {
 
 .text-2xl{
   font-size: 1.5rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
 }
 
 .leading-tight{
@@ -1181,6 +1189,12 @@ video {
     }
   }
 
+  .sm\:bg-white{
+    --bg-opacity: 1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, var(--bg-opacity));
+  }
+
   .sm\:rounded-lg{
     border-radius: 0.5rem;
   }
@@ -1218,6 +1232,11 @@ video {
   .sm\:py-2{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+  }
+
+  .sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .sm\:px-4{
